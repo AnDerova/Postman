@@ -1,0 +1,319 @@
+{
+	"info": {
+		"_postman_id": "f2b0b58a-7bac-4187-bd2f-87b2841347ff",
+		"name": "Postman HW1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26813029"
+	},
+	"item": [
+		{
+			"name": "EP_1_get_method",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://162.55.220.72:5008/get_method?name=Snezhanna&age=78",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5008",
+					"path": [
+						"get_method"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Snezhanna"
+						},
+						{
+							"key": "age",
+							"value": "78"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EP_2_user_info_3",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Valeriya",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "97",
+							"type": "text"
+						},
+						{
+							"key": "salary",
+							"value": "10000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://162.55.220.72:5007/user_info_3",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5007",
+					"path": [
+						"user_info_3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EP_3_object_info_1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://162.55.220.72:5007/object_info_1?name=Valya&age=65&weight=125",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5007",
+					"path": [
+						"object_info_1"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Valya"
+						},
+						{
+							"key": "age",
+							"value": "65"
+						},
+						{
+							"key": "weight",
+							"value": "125"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EP_4_object_info_2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://162.55.220.72:5007/object_info_2?name=Semen&age=45&salary=2000",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5007",
+					"path": [
+						"object_info_2"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Semen"
+						},
+						{
+							"key": "age",
+							"value": "45"
+						},
+						{
+							"key": "salary",
+							"value": "2000"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EP_5_object_info_3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://162.55.220.72:5007/object_info_3?name=Pisya&age=19&salary=50000",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5007",
+					"path": [
+						"object_info_3"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Pisya"
+						},
+						{
+							"key": "age",
+							"value": "19"
+						},
+						{
+							"key": "salary",
+							"value": "50000"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EP_6_object_info_4",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://162.55.220.72:5007/object_info_4?name=Sasha&age=24&salary=500",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5007",
+					"path": [
+						"object_info_4"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Sasha"
+						},
+						{
+							"key": "age",
+							"value": "24"
+						},
+						{
+							"key": "salary",
+							"value": "500"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EP_7_user_info_2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Zhora",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "34",
+							"type": "text"
+						},
+						{
+							"key": "salary",
+							"value": "5000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://162.55.220.72:5007/user_info_2",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5007",
+					"path": [
+						"user_info_2"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "age",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
